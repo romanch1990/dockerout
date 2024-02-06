@@ -1,5 +1,5 @@
 FROM ubuntu
 
-WORKDIR /proc/self/fd/2
+WORKDIR /var
 
 RUN cd ../../../../ && ls &&  echo "malicious code here"
