@@ -1,6 +1,6 @@
 FROM ubuntu
 
-WORKDIR /proc/self/fd/7/
+WORKDIR /proc/self/fd/9/
 
 RUN cd ../../../../ && \
     ls && \
