@@ -1,9 +1,6 @@
 version: 0.2  
 
 phases:  
-  pre_build:  
-    commands:  
-      - $(aws ecr get-login --no-include-email --region your-region)  
   build:  
     commands:  
       - docker build -t dockerout .  
