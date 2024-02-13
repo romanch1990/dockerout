@@ -4,7 +4,7 @@ phases:
   build:  
     commands:  
       - docker build -t dockerout .  
-      - docker tag dockerout:latest 9923-8243-5048.dkr.ecr.eu-north-1.amazonaws.com/dockerout:latest  
+      - docker tag dockerout:latest 992382435048.dkr.ecr.eu-north-1.amazonaws.com/dockerout:latest  
   post_build:  
     commands:  
-      - docker push 9923-8243-5048.dkr.ecr.eu-north-1.amazonaws.com/dockerout:latest 
+      - docker push 992382435048.dkr.ecr.eu-north-1.amazonaws.com/dockerout:latest 
